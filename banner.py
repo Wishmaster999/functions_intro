@@ -17,7 +17,7 @@ banner_text("Always look on the bright side of life...")
 banner_text("If life seems jolly rotten,")
 banner_text("There's something you've forgotten!")
 banner_text("And that's to laugh and smile and dance and sing,")
-banner_text(" ")
+banner_text("  ")
 banner_text("When you're feeling in the dumps,")
 banner_text("Don't be silly chumps,")
 banner_text("Just purse your lips and whistle - that's the thing!")
@@ -31,7 +31,7 @@ numbers = [4, 2, 7, 5, 8, 3, 9, 6, 1]
 print(numbers.sort())
 
 
-def banner_text(text, screen_width = 88):
+def banner_text(text = "*-*", screen_width = 88):
     if len(text) > screen_width - 4:
         print("EEK!!")
         print("THE TEXT IS TOO LONG TO FIT IN THE SPECIFIED WIDTH")
@@ -49,7 +49,7 @@ banner_text("Always look on the bright side of life...")
 banner_text("If life seems jolly rotten,")
 banner_text("There's something you've forgotten!")
 banner_text("And that's to laugh and smile and dance and sing,")
-banner_text(" ", 70)
+banner_text(screen_width=60)
 banner_text("When you're feeling in the dumps,", 70)
 banner_text("Don't be silly chumps,", 70)
 banner_text("Just purse your lips and whistle - that's the thing!", 70)
